@@ -96,6 +96,16 @@ class EmojiTableTableViewController: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditEmoji" {
+            let indexPath = tableView.indexPathForSelectedRow!
+            let emoji = emojis[indexPath.row]
+            let addEditEmojiTableViewController = segue.destination
+            as! AddEditEmojiTableViewController
+            addEditEmojiTableViewController.emoji = emoji
+        }
+    }
+    
     
     /*
      // Override to support conditional rearranging of the table view.
