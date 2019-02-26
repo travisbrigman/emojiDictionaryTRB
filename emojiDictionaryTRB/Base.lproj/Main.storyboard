@@ -27,8 +27,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPX-RM-2bQ">
-                                                    <rect key="frame" x="16" y="6.5" width="343" height="30.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPX-RM-2bQ">
+                                                    <rect key="frame" x="16" y="6" width="343" height="31"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -38,12 +38,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="H0R-wL-yT2"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerX" secondItem="VdH-yh-Gj8" secondAttribute="centerX" id="Ri9-bP-fpm"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="trailing" secondItem="VdH-yh-Gj8" secondAttribute="trailingMargin" id="cq9-V0-zH6"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uPX-RM-2bQ" secondAttribute="bottom" constant="-4" id="hLS-n9-3LJ"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="leading" secondItem="VdH-yh-Gj8" secondAttribute="leadingMargin" id="hde-Qs-D2e"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="oyS-dg-JUj"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="0Tc-vF-pY1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uPX-RM-2bQ" secondAttribute="bottom" constant="-4" id="77E-Bw-nMp"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="leading" secondItem="VdH-yh-Gj8" secondAttribute="leadingMargin" id="RR9-9c-Iem"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="trailing" secondItem="VdH-yh-Gj8" secondAttribute="trailingMargin" id="tVI-HB-tRf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -59,7 +57,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bs6-L8-GTo">
-                                                    <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                                    <rect key="frame" x="16" y="6.5" width="343" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -87,8 +85,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R55-hz-Ohm">
-                                                    <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R55-hz-Ohm">
+                                                    <rect key="frame" x="16" y="6.5" width="343" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -116,8 +114,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zC2-vo-s6g">
-                                                    <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zC2-vo-s6g">
+                                                    <rect key="frame" x="16" y="6.5" width="343" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
