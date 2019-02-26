@@ -28,17 +28,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPX-RM-2bQ">
-                                                    <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                                    <rect key="frame" x="16" y="6.5" width="343" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="cos-4w-KSl" eventType="editingChanged" id="Nxb-7P-LqL"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uPX-RM-2bQ" secondAttribute="bottom" constant="-4" id="AgM-Wh-WIH"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="CmJ-Rg-DkF"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="trailing" secondItem="VdH-yh-Gj8" secondAttribute="trailingMargin" id="SYE-eN-DeZ"/>
-                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="leading" secondItem="VdH-yh-Gj8" secondAttribute="leadingMargin" id="VeT-ws-aoh"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="H0R-wL-yT2"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerX" secondItem="VdH-yh-Gj8" secondAttribute="centerX" id="Ri9-bP-fpm"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="trailing" secondItem="VdH-yh-Gj8" secondAttribute="trailingMargin" id="cq9-V0-zH6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uPX-RM-2bQ" secondAttribute="bottom" constant="-4" id="hLS-n9-3LJ"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="leading" secondItem="VdH-yh-Gj8" secondAttribute="leadingMargin" id="hde-Qs-D2e"/>
+                                                <constraint firstItem="uPX-RM-2bQ" firstAttribute="centerY" secondItem="VdH-yh-Gj8" secondAttribute="centerY" id="oyS-dg-JUj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -58,6 +63,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="cos-4w-KSl" eventType="editingChanged" id="wwr-8B-Kdt"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -84,6 +92,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="cos-4w-KSl" eventType="editingChanged" id="1iI-e7-Ve3"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -110,6 +121,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="cos-4w-KSl" eventType="editingChanged" id="5Kq-oE-80d"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -128,15 +142,32 @@
                             <outlet property="delegate" destination="cos-4w-KSl" id="2J2-dN-pHf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="T0I-Qw-Dba"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="vpA-6b-9Na"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="T0I-Qw-Dba">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cPl-0h-pL5">
+                            <connections>
+                                <segue destination="Mwc-2r-KaS" kind="unwind" unwindAction="unwindToEmojiTableViewWithSegue:" id="Ft9-I5-2Kc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="u65-nm-DJ3">
+                            <connections>
+                                <segue destination="Mwc-2r-KaS" kind="unwind" identifier="saveUnwind" unwindAction="unwindToEmojiTableViewWithSegue:" id="THo-q9-GNs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionTextField" destination="R55-hz-Ohm" id="43x-o2-PLg"/>
                         <outlet property="nameTextField" destination="bs6-L8-GTo" id="JSZ-Xf-MZE"/>
+                        <outlet property="saveButton" destination="u65-nm-DJ3" id="ffi-QU-F3a"/>
                         <outlet property="symbolTextField" destination="uPX-RM-2bQ" id="kra-iR-J4X"/>
                         <outlet property="usageTextField" destination="zC2-vo-s6g" id="3Yn-ua-WYd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eru-Tt-LqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mwc-2r-KaS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2316" y="50.824587706146929"/>
         </scene>
